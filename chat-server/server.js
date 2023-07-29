@@ -21,6 +21,10 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + "/index.html");
 });
 
+app.get("/another-handler-example", (req, res) => {
+  res.send({})
+})
+
 app.listen(process.env.PORT,() => {
   console.log(`listening on PORT ${process.env.PORT}...`);
 });
