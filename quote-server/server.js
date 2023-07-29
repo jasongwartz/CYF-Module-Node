@@ -16,6 +16,10 @@ app.get("/", function (request, response) {
   response.send("Neill's Quote Server!  Ask me for /quotes/random, or /quotes");
 });
 
+app.get("hello-from-pull-request-demo", () => {
+  res.send({})
+})
+
 //START OF YOUR CODE...
 
 //...END OF YOUR CODE
